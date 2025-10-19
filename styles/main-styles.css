@@ -1,0 +1,188 @@
+/* |||| FONT-FACE |||| */
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter Bold";
+  font-style: normal;
+  font-weight: 700;
+  src: url("./fonts/inter/static/Inter_18pt-Bold.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/inter/Inter-VariableFont_opsz,wght.ttf") format("truetype");
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Lexend Deca Regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("./fonts/lexend-deca/LexendDeca-VariableFont_wght.ttf") format("truetype");
+}
+
+/* |||| ROOT |||| */
+
+:root {
+    /* || COLORS || */
+
+    --blue--950: hsl(244, 37%, 16%); /* (card background) */
+    --navy--950: hsl(233, 47%, 7%); /* (main background) */
+    --purple--500: hsl(277, 64%, 61%); /* (accent) */
+    --white--1: hsl(0, 0%, 100%); /* (main heading, stats) */
+    --white--2: hsla(0, 0%, 100%, 0.75); /* (main paragraph) */
+    --white--3: hsla(0, 0%, 100%, 0.6); /* (stat headings) */
+    --white--4: hsl(0, 100%, 100%);
+
+    /* || FONT-SIZE || */
+    
+    /* xl 28px - 36px preset-1 */
+    --text--lg: clamp(1.867rem, calc(1rem + 3vw) , 2.4rem);
+    /* md 24px preset-2 */
+    --text--md: 1.6rem;
+    /* sm 15px preset-3 */
+    --text--sm: 1rem;
+    /* xs 12px preset-4 */
+    --text--xs: 0.8rem;
+}
+
+/* |||| RESET |||| */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img,
+picture,
+video {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+    background-color: transparent;
+    border-color: transparent;
+    color: inherit;
+    font: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul,
+ol {
+    list-style-type: none;
+}
+
+/* |||| GENERAL |||| */
+
+html {
+    font-size: 15px;
+}
+
+main {
+    align-items: center;
+    background-color: var(--navy--950);
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+}
+
+/* || TEXT-PRESETS || */
+
+.text-preset-1 {
+    font-size: var(--text--lg);
+    line-height: 125%;
+}
+
+.text-preset-2 {
+    font-size: var(--text--md);
+    line-height: 120%;
+}
+
+.text-preset-1,
+.text-preset-2 {
+    font-family: "Inter Bold";
+}
+
+.text-preset-3 {
+    font-family: "Inter Regular";
+    font-size: var(--text--sm);
+    line-height: 165%;
+}
+
+.text-preset-4 {
+    font-family: "Lexend Deca Regular";
+    font-size: var(--text--xs);
+    letter-spacing: 0.083em;
+    line-height: 200%;
+    text-transform: uppercase;
+}
+
+/* |||| CARD |||| */
+
+.card {
+    background-color: var(--blue--950);
+    border-radius: 0.533em;
+    text-align: center;
+    max-width: 21.8em;
+}
+
+.hero-container {
+    border-radius: 0.533em 0.533em 0 0;
+    background-color: var(--purple--500);
+    margin-block-end: 2.133em;
+}
+
+.hero-image {
+    mix-blend-mode: multiply;
+    object-fit: cover;
+    opacity: 0.75;
+}
+
+.info-container {
+    padding: 0 2.133em;
+}
+
+.heading-1 {
+    color: var(--white--1);
+    margin-block-end: 0.286em;
+}
+
+.highlight-purple {
+    color: var(--purple--500);
+}
+
+.summary {
+    color: var(--white--2);
+    margin-block-end: 1.667em;
+}
+
+.stat-list-item {
+    margin-block-end: 1.333em;
+}
+
+.stat-list-item .amounts {
+    color: var(--white--1);
+}
+
+.stat-list-item .topics {
+    color: var(--white--3);
+}
+
+.stat-list-item:last-child {
+    text-transform: uppercase;
+}
