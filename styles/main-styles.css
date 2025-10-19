@@ -154,7 +154,7 @@ main {
 }
 
 .info-container {
-    padding: 0 2.133em;
+    margin: 0 2.133em;
 }
 
 .heading-1 {
@@ -186,3 +186,31 @@ main {
 .stat-list-item:last-child {
     text-transform: uppercase;
 }
+
+/* |||| MEDIA QUERIES |||| */
+
+/* |||| TABLET SCREEN |||| */
+
+@media screen and (min-width: 48em) {
+    /* || CARD || */
+    .card {
+        text-align: start;
+        max-width: 37.6em;
+    }
+
+    .info-container {
+        margin: 3.5em 5em 0; 
+    }
+
+    .summary {
+        max-width: 40ch;
+    }
+
+    .ul-flex-container {
+        display: flex;
+        justify-content: space-between;
+        margin: 5em 4.5em 4em 0;
+    }
+}
+
+/* |||| DESKTOP SCREEN |||| */
