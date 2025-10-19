@@ -214,3 +214,30 @@ main {
 }
 
 /* |||| DESKTOP SCREEN |||| */
+
+@media screen and (min-width: 68.75em) {
+    .card {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 70.5em;
+    }
+
+    .hero-container {
+        border-radius: 0 0.533em 0.533em 0;
+        display: flex;
+        margin: 0;
+    }
+
+    .heading-1 {
+        margin-block-end: 1em;
+        max-width: 20ch;
+    }
+
+    .info-container {
+        margin: 3em 7em 0 3em;
+    }
+
+    .ul-flex-container {
+        margin: 5em 3em 0 0;
+    }
+}
