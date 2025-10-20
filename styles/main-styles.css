@@ -101,6 +101,17 @@ main {
     justify-content: center;
 }
 
+/* || SCREEN READER || */
+
+.sr-only {
+    height: 1px;
+    left: -10000px;
+    overflow: hidden;
+    position: absolute;
+    top: auto;
+    width: 1px;
+}
+
 /* || TEXT-PRESETS || */
 
 .text-preset-1 {
@@ -133,6 +144,7 @@ main {
 }
 
 /* |||| CARD |||| */
+/* || IMAGE || */
 
 .card {
     background-color: var(--blue--950);
@@ -152,6 +164,8 @@ main {
     object-fit: cover;
     opacity: 0.75;
 }
+
+/* || STATS INFORMATION CONTENT || */
 
 .info-container {
     margin: 0 2.133em;
@@ -197,7 +211,7 @@ main {
         text-align: start;
         max-width: 37.6em;
     }
-
+    /* || STATS INFORMATION CONTENT || */
     .info-container {
         margin: 3.5em 5em 0; 
     }
@@ -216,25 +230,26 @@ main {
 /* |||| DESKTOP SCREEN |||| */
 
 @media screen and (min-width: 68.75em) {
+    /* || CARD || */
     .card {
         display: flex;
         flex-direction: row-reverse;
-        max-width: 70.5em;
+        max-width: 71.5em;
     }
-
+    /* || IMAGE || */
     .hero-container {
         border-radius: 0 0.533em 0.533em 0;
         display: flex;
         margin: 0;
     }
-
+    /* || STATS INFORMATION CONTENT || */
     .heading-1 {
         margin-block-end: 1em;
         max-width: 20ch;
     }
 
     .info-container {
-        margin: 3em 7em 0 3em;
+        margin: 6em 7em 3em 6em;
     }
 
     .ul-flex-container {
