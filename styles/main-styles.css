@@ -126,17 +126,17 @@ main {
 
 .text-preset-1,
 .text-preset-2 {
-    font-family: "Inter Bold";
+    font-family: "Inter Bold", Arial, Helvetica, sans-serif;
 }
 
 .text-preset-3 {
-    font-family: "Inter Regular";
+    font-family: "Inter Regular", Arial, Helvetica, sans-serif;
     font-size: var(--text--sm);
     line-height: 165%;
 }
 
 .text-preset-4 {
-    font-family: "Lexend Deca Regular";
+    font-family: "Lexend Deca Regular", Arial, Helvetica, sans-serif;
     font-size: var(--text--xs);
     letter-spacing: 0.083em;
     line-height: 200%;
