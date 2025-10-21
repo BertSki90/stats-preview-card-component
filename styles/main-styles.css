@@ -234,7 +234,7 @@ main {
     .card {
         display: flex;
         flex-direction: row-reverse;
-        max-width: 71.5em;
+        max-width: 72.5em;
     }
     /* || IMAGE || */
     .hero-container {
@@ -249,7 +249,7 @@ main {
     }
 
     .info-container {
-        margin: 6em 7em 3em 6em;
+        margin: 4em 7em 3em 6em;
     }
 
     .ul-flex-container {
