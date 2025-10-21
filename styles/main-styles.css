@@ -144,7 +144,6 @@ main {
 }
 
 /* |||| CARD |||| */
-/* || IMAGE || */
 
 .card {
     background-color: var(--blue--950);
@@ -152,6 +151,8 @@ main {
     text-align: center;
     max-width: 21.8em;
 }
+
+/* || IMAGE (with overlay) || */
 
 .hero-container {
     border-radius: 0.533em 0.533em 0 0;
@@ -199,6 +200,19 @@ main {
 
 .stat-list-item:last-child {
     text-transform: uppercase;
+}
+
+/* |||| FOOTER - attribution |||| */
+
+.attribution {
+    background-color: var(--navy--950);
+    color: var(--white--1);
+    padding: 3em 1em;
+    text-align: center;
+}
+
+.attribution a {
+    color: var(--purple--500);
 }
 
 /* |||| MEDIA QUERIES |||| */
@@ -249,7 +263,7 @@ main {
     }
 
     .info-container {
-        margin: 4em 7em 3em 6em;
+        margin: 5em 7em 3em 4em;
     }
 
     .ul-flex-container {
