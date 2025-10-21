@@ -19,7 +19,7 @@
   <body>
     <main>
       <!-- CARD -->
-      <section class="card">
+      <article class="card">
         <!-- PAGE TITLE - sr-only -->
         <header>
           <h1 class="sr-only">Stats Preview Card Component</h1>
@@ -29,7 +29,7 @@
           <!-- IMAGE FOR TABLET SCREEN AND + SIZES -->
           <source
             srcset="images\image-header-desktop.jpg"
-            media="(width >= 767px)"
+            media="(min-width = 767px)"
           />
           <!-- IMAGE FOR MOBILE SCREEN -->
           <img
@@ -43,7 +43,7 @@
         </picture>
 
         <!-- CONTAINER -->
-        <article class="info-container">
+        <section class="info-container">
           <h2 class="heading-1 text-preset-1">
             Get <span class="highlight-purple">insights</span> that help your
             business grow.
@@ -66,8 +66,8 @@
               <p class="topics text-preset-4">queries</p>
             </li>
           </ul>
-        </article>
-      </section>
+        </section>
+      </article>
     </main>
 
     <footer class="attribution">
