@@ -22,7 +22,7 @@ This is a solution to the [Stats preview card component challenge on Frontend Me
 
 Estimated Time: 10hrs
 
-Completion Time: 6:54
+Completion Time: 7hrs 46min
 
 Users should be able to:
 
